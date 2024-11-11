@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persona 5 royal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar open">
+    <iframe src="https://lottie.host/embed/fd3a0b73-f5c1-4fda-8d85-003b87fc1b09/DqQLSkpBEx.json" width="100" height="100" style="border: none; padding: 0; margin: 0;"></iframe>
+    <ul>
+       <li><a href = "index.html">Home</a></li>
+       <li><a href = "video.html">Video</a></li>
+       <li><a href = "audio.html">Music</a></li>
+       <li><a href = "book.html">Book</a></li>
+       <li class = "work"><a href= "#">Work &bigtriangledown;</a>
+            <ul>
+              <li><a href = "form.html">Form</a></li>
+              <li><a href= "math.html">Math</a></li>
+              <li><a href="api.html">API</a></li>
+            </ul>
+       </li>
+  </ul>
+  <div><a href = "https://megamitensei.fandom.com/wiki/Ren_Amamiya">Entry</a>     
+
+  <div class="burger" id="burger2">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </div>
+  </nav>
+  <main class="math">
+    <form>
+        <fieldset>
+            <legend>Calculation</legend>
+            <div class="counters">
+                <div>
+                    <label for="first">First<br>number</label>
+                    <input type="number" id="first" name="first" placeholder="0">
+                </div>
+                <div>
+                    <label for="second">Second<br>number</label>
+                    <input type="number" id="second" name="second" placeholder="0">
+                </div>
+            </div>
+            <div class="butcont">
+                <button type="button" id="butplus">+</button>
+                <button type="button" id="butminus">-</button>
+                <button type="button" id="butmult">*</button>
+                <button type="button" id="butdiv">/</button>
+            </div>
+            <p><span id="result">0</span></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Trigonometric Functions</legend>
+            <div class="counters">
+                <div>
+                    <label for="angle">Angle<br>(in degrees)</label>
+                    <input type="number" id="angle" name="angle" placeholder="0">
+                </div>
+            </div>
+            <div class="butcont">
+                <button type="button" id="butsin">sin</button>
+                <button type="button" id="butcos">cos</button>
+                <button type="button" id="buttan">tan</button>
+            </div>
+            <p><span id="trigResult">0</span></p>
+        </fieldset>
+    </form>
+</main>
+
+
+<footer></footer>
+<div style="text-align: center;">
+    <a href="https://store.steampowered.com/app/1687950/Persona_5_Royal/">
+        <img src="./public/Steam_icon_logo.png" width="80" height="70">
+    </a>
+    <a href="https://www.youtube.com/watch?v=vWWy7V9rCrA">
+        <img src="./public/youtube.png" width="80" height="70">
+    </a>
+</div>
+</footer>
+<script src = "./js/script.js"></script>
+</body>
+</html>
