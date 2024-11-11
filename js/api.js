@@ -2,7 +2,7 @@ const petropavl = document.getElementById('Petropavl');
 const vinnytsia = document.getElementById('Vinnytsia');
 const minebro = document.getElementById('Minebro');
 
-async function api() {
+async function Api() {
     const respons_petropavl = await fetch('https://api.open-meteo.com/v1/forecast?latitude=54.8667&longitude=69.15&current_weather=true');
     const respons_vinnytsia = await fetch('https://api.open-meteo.com/v1/forecast?latitude=48.8534&longitude=2.3488&current_weather=true');
     const respons_minebro = await fetch('https://api.open-meteo.com/v1/forecast?latitude=29.5&longitude=47.75&current_weather=true');
@@ -16,7 +16,7 @@ async function api() {
 
 async function output() {
     try {
-        let out = await api();
+        let out = await Api();
         console.log(out);
         
         petropavl.textContent = `Air temperature: ${out[0].current_weather.temperature} \u00B0C`;
